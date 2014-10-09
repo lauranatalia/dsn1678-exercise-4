@@ -54,9 +54,15 @@ section {
 	opacity:0;
 }
 
+
 .js-shuttle-fade{
 	-webkit-animation: shuttle-fade 1s linear forwards;
+	-ms-animation: shuttle-fade 1s linear forwards;
+	-moz-animation: shuttle-fade 1s linear forwards;
+	-o-animation: shuttle-fade 1s linear forwards;
+	animation: shuttle-fade 1s linear forwards;
 }
+
 
 @-webkit-keyframes shuttle-fade{
 	0%{
@@ -90,7 +96,11 @@ section {
 }
 
 .js-ship1{
-	-webkit-animation: ship1 1s linear forwards;	
+	-webkit-animation: ship1 1s linear forwards;
+	-webkit-animation: ship1 1s linear forwards;
+	-ms-animation: ship1 1s linear forwards;
+	-moz-animation: ship1 1s linear forwards;
+	-o-animation: ship1 1s linear forwards;	
 	
 
 }
@@ -108,7 +118,10 @@ section {
 
 .js-ship2{
 	-webkit-animation: ship2 1s linear forwards;
-	-webkit-animation-delay:500ms;	
+	-webkit-animation: ship2 1s linear forwards;
+	-ms-animation: ship2 1s linear forwards;
+	-moz-animation: ship2 1s linear forwards;
+	-webkit-animation-delay:500ms;
 }
 
 @-webkit-keyframes ship2{
