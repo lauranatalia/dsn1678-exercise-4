@@ -1,0 +1,123 @@
+body {
+	margin: 0;
+	padding: 0;
+	font: normal 100%/1.5 Georgia,serif;
+	background-color: #c7c0ae;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+section {
+	padding: 10rem 0;
+}
+
+.sun {
+	width: 300px;
+}
+
+.sun-section {
+	background: transparent url("../img/mars-pano.jpg") no-repeat center top; 
+	background-size: cover;
+}
+
+.dipper {
+	width: 300px;
+	opacity: 0;
+}
+
+.js-dipper-fade {
+	/* Dont forget to put in all the prefixes!!!! */
+	-webkit-animation: dipper-fade 1s linear forwards;
+}
+
+
+/* Dont forget to put in all the prefixes!!!! */
+@-webkit-keyframes dipper-fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+.shuttle-section{
+	background-color:#EAA600;
+}
+
+.shuttle{
+	width:200px;
+	opacity:0;
+}
+
+.js-shuttle-fade{
+	-webkit-animation: shuttle-fade 1s linear forwards;
+}
+
+@-webkit-keyframes shuttle-fade{
+	0%{
+		opacity:0;
+		transform:translateY(100px)	
+	}
+	100%{
+		opacity:1;
+		transform:translateY(0)
+
+	}
+}
+
+
+
+.ship-section{
+	Background:transparent url(../img/kasei-valles-canyons.jpg) no-repeat center;
+	background-size:cover;
+	text-align:center;
+}
+
+.ship{
+	width:150px;
+	display:inline-block;
+}
+
+.ship1,.ship2{
+	opacity:0;
+
+
+}
+
+.js-ship1{
+	-webkit-animation: ship1 1s linear forwards;	
+	
+
+}
+
+@-webkit-keyframes ship1{
+	0%{
+		opacity:0;
+		transform:translateY(100px)	
+	}
+	100%{
+		opacity:1;
+		transform:translateY(0)
+	}
+}
+
+.js-ship2{
+	-webkit-animation: ship2 1s linear forwards;
+	-webkit-animation-delay:500ms;	
+}
+
+@-webkit-keyframes ship2{
+	0%{
+		opacity:0;
+		transform:translateY(100px)	
+	}
+	100%{
+		opacity:1;
+		transform:translateY(0)
+	}
+}
